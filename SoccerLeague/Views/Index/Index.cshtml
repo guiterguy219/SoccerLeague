@@ -1,8 +1,14 @@
-﻿
-@{
+﻿@{
     ViewBag.Title = "Index";
 }
 
 <h2>MLS Standings</h2>
-@Html.Raw((String)ViewBag.Output)
 
+<div class="container">
+    <br>
+    <p>Type something in the input field to search the table for rankings, team name, or points:</p>
+    <input class="form-control" id="myInput" type="text" placeholder="Search...">
+    <br>
+</div>
+
+@Html.Raw((String)ViewBag.Output)
