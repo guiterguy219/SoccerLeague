@@ -10,5 +10,6 @@ namespace SoccerLeague.Models
         public string name { get; set; }
         public int wins { get; set; }
         public int loss { get; set; }
+
     }
 }
