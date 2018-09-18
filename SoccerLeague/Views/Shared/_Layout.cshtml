@@ -9,16 +9,6 @@
     <script src="~/Scripts/modernizr-2.8.3.js"></script>
 </head>
 <body>
-    <div class="navbar navbar-nav navbar-fixed-top">
-        <div class="container">
-            <div class="navbar-header">
-                @Html.ActionLink("MLS League Standings", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
-            </div>
-            <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav"></ul>
-            </div>
-        </div>
-    </div>
 
     <div class="container body-content">
         @RenderBody()
