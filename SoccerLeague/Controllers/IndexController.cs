@@ -39,6 +39,7 @@ namespace SoccerLeague.Controllers
             ViewBag.Output += "<thead class=\"thead-dark\">";
             ViewBag.Output += "<tr>";
             ViewBag.Output += "<th>Ranking</th>";
+            ViewBag.Output += "<th>&nbsp;</th>";
             ViewBag.Output += "<th>Team Name</th>";
             ViewBag.Output += "<th>Points</th>";
             ViewBag.Output += "</tr>";
@@ -51,6 +52,8 @@ namespace SoccerLeague.Controllers
                 iTeamRank++;
                 ViewBag.Output += "<tr>";
                 ViewBag.Output += "<td>" + iTeamRank + "</td>";
+                //ViewBag.Output += "<td><img src=\"../../Images/" + myObj.name + ".png\" style=\"width: 30px\" class=\"team-images\"/></td>";
+                ViewBag.Output += "<td><img src=\"../../Images/Icons/" + myObj.name + ".ico\" style=\"width: 30px\" class=\"team-images\"/></td>";
                 ViewBag.Output += "<td>" + "<a href=\"" + myObj.webAddress + "\">" + myObj.name + "</a></td>";
                 ViewBag.Output += "<td>" + myObj.points + "</td>";
                 ViewBag.Output += "</tr>";
