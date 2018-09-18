@@ -2,13 +2,18 @@
     ViewBag.Title = "Index";
 }
 
-<h2>MLS Standings</h2>
+<div class="jumbotron bg-info">
+    <a href="http://www.mlssoccer.com">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/MLS_logo.svg/1200px-MLS_logo.svg.png" class="float-right" alt="MLS Logo" height="200" width="200">
+    </a>
+    <h2 class="display-3">MLS Standings</h2>
 
-<div class="container">
-    <br>
-    <p>Type something in the input field to search the table for rankings, team name, or points:</p>
-    <input class="form-control" id="myInput" type="text" placeholder="Search...">
-    <br>
+    <div class="container">
+        <br>
+        <p>Type something in the input field to search the table for rankings, team name, or points:</p>
+        <input class="form-control" id="myInput" type="text" placeholder="Search...">
+        <br>
+    </div>
 </div>
 
 @Html.Raw((String)ViewBag.Output)
