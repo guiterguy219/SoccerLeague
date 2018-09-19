@@ -17,7 +17,6 @@ namespace SoccerLeague.Controllers
             List<SoccerTeam> lstSorted;
             int iTeamRank = 0;
 
-
             //Load the data
             lstTeams.Add(new SoccerTeam("RSL", 35, "https://www.rsl.com"));
             lstTeams.Add(new SoccerTeam("Colorado", 24, "https://www.coloradorapids.com"));
@@ -58,7 +57,6 @@ namespace SoccerLeague.Controllers
 
             ViewBag.output += "</tbody>";
             ViewBag.output += "</table>";
-
 
             return View();
         }
