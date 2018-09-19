@@ -35,7 +35,7 @@ namespace SoccerLeague.Controllers
             //Sort the list
             lstSorted = lstTeams.OrderByDescending(x => x.points).ToList();
 
-            ViewBag.Output += "<table class=\"table table-striped table-hover\">";
+            ViewBag.Output += "<table class=\"table table-striped table-hover\" style=\"background-color: #fff\">";
             ViewBag.Output += "<thead class=\"thead-dark\">";
             ViewBag.Output += "<tr>";
             ViewBag.Output += "<th>Ranking</th>";
